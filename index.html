@@ -3,20 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nông Trại Tương Lai</title>
+    <title>Nông Trại Xanh - Thực Phẩm Sạch</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-    <header><h1>NÔNG TRẠI XANH</h1></header>
-    <div class="container">
-        <h2>Đặt hàng & Liên hệ</h2>
-        <input type="text" id="ten" placeholder="Tên của bạn">
-        <input type="email" id="email" placeholder="Email">
-        <textarea id="tinnhan" rows="4" placeholder="Nội dung..."></textarea>
-        <button id="btnGui" onclick="guiDuLieu()">GỬI TIN NHẮN</button>
-        <div id="status"></div>
-    </div>
+    <nav>
+        <div class="logo">NÔNG TRẠI XANH</div>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#sanpham">Sản phẩm</a></li>
+            <li><a href="#lienhe">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Nông Sản Sạch Từ Tâm</h1>
+            <p>Giao tận cửa - Tươi mỗi ngày</p>
+            <a href="#sanpham" class="btn">Xem Sản Phẩm</a>
+        </div>
+    </header>
+
+    <section id="sanpham" class="section">
+        <h2 class="title">Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566385101042-1a000c1268c4?w=400" alt="Rau">
+                <h3>Rau Hữu Cơ</h3>
+                <p>30.000đ/kg</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400" alt="Quả">
+                <h3>Trái Cây Vườn</h3>
+                <p>55.000đ/kg</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=400" alt="Mat ong">
+                <h3>Mật Ong Rừng</h3>
+                <p>180.000đ/lít</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lienhe" class="section bg-light">
+        <div class="contact-box">
+            <h2>Gửi Yêu Cầu Cho Chúng Tôi</h2>
+            <div class="form-group">
+                <input type="text" id="ten" placeholder="Họ và tên của bạn">
+                <input type="email" id="email" placeholder="Email liên hệ">
+                <textarea id="tinnhan" rows="4" placeholder="Bạn muốn đặt hàng gì?"></textarea>
+                <button id="btnGui" onclick="guiDuLieu()">GỬI ĐƠN HÀNG</button>
+                <div id="status"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nông Trại Xanh - Thiết kế bởi Bạn</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
