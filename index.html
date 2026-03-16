@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nông Trại Xanh - Thực Phẩm Sạch</title>
+    <title>Nông Trại Xanh - Đặc Sản Sạch VN</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -17,50 +17,61 @@
         </ul>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="hero-image">
         <div class="hero-content">
-            <h1>Nông Sản Sạch Từ Tâm</h1>
-            <p>Giao tận cửa - Tươi mỗi ngày</p>
-            <a href="#sanpham" class="btn">Xem Sản Phẩm</a>
+            <h1>Sản Vật Đất Việt - Tươi Sạch Từ Vườn</h1>
+            <p>Bầu, bí, mướp, khổ qua... Giao tận cửa hàng ngày</p>
+            <a href="#sanpham" class="btn">Mua Ngay</a>
         </div>
     </header>
 
     <section id="sanpham" class="section">
-        <h2 class="title">Sản Phẩm Nổi Bật</h2>
+        <h2 class="title">Sản Phẩm Đang Mùa</h2>
         <div class="product-grid">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1566385101042-1a000c1268c4?w=400" alt="Rau">
-                <h3>Rau Hữu Cơ</h3>
-                <p>30.000đ/kg</p>
+                <img src="#" alt="Bầu" id="img-bau">
+                <h3>Bầu Sao</h3>
+                <p class="price">25.000đ/kg</p>
+                <p class="desc">Bầu tươi, ngọt nước, trồng tự nhiên.</p>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400" alt="Quả">
-                <h3>Trái Cây Vườn</h3>
-                <p>55.000đ/kg</p>
+                <img src="#" alt="Bí đao" id="img-bidao">
+                <h3>Bí Đao Xanh</h3>
+                <p class="price">20.000đ/kg</p>
+                <p class="desc">Bí già, chắc thịt, thơm nhẹ.</p>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=400" alt="Mat ong">
-                <h3>Mật Ong Rừng</h3>
-                <p>180.000đ/lít</p>
+                <img src="#" alt="Mướp" id="img-muop">
+                <h3>Mướp Hương</h3>
+                <p class="price">30.000đ/kg</p>
+                <p class="desc">Mướp ngọt, thơm đặc trưng.</p>
+            </div>
+            <div class="card">
+                <img src="#" alt="Khổ qua" id="img-khoqua">
+                <h3>Khổ Qua</h3>
+                <p class="price">35.000đ/kg</p>
+                <p class="desc">Khổ qua đắng vừa, giòn ngọt.</p>
+            </div>
+            <div class="card">
+                <img src="#" alt="Đậu đũa" id="img-daudua">
+                <h3>Đậu Đũa</h3>
+                <p class="price">28.000đ/kg</p>
+                <p class="desc">Đậu đũa tơ, xanh mướt, giòn.</p>
+            </div>
+            <div class="card">
+                <img src="#" alt="Dưa leo" id="img-dualeo">
+                <h3>Dưa Leo</h3>
+                <p class="price">22.000đ/kg</p>
+                <p class="desc">Dưa leo giòn, ngọt, ít hạt.</p>
             </div>
         </div>
     </section>
 
     <section id="lienhe" class="section bg-light">
-        <div class="contact-box">
-            <h2>Gửi Yêu Cầu Cho Chúng Tôi</h2>
-            <div class="form-group">
-                <input type="text" id="ten" placeholder="Họ và tên của bạn">
-                <input type="email" id="email" placeholder="Email liên hệ">
-                <textarea id="tinnhan" rows="4" placeholder="Bạn muốn đặt hàng gì?"></textarea>
-                <button id="btnGui" onclick="guiDuLieu()">GỬI ĐƠN HÀNG</button>
-                <div id="status"></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <footer>
-        <p>&copy; 2026 Nông Trại Xanh - Thiết kế bởi Bạn</p>
+        <p>&copy; 2026 Nông Trại Xanh - Đặc Sản Sạch Việt Nam</p>
     </footer>
 
     <script src="script.js"></script>
