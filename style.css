@@ -1,6 +1,33 @@
-body { font-family: Arial, sans-serif; background-color: #f4f9f4; padding: 20px; }
-.container { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-header { text-align: center; color: #2d5a27; }
-input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
-button { width: 100%; background: #2d5a27; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-#status { margin-top: 15px; text-align: center; font-weight: bold; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; }
+
+/* Menu */
+nav { background: #2d5a27; color: white; display: flex; justify-content: space-between; padding: 1rem 10%; position: sticky; top: 0; z-index: 1000; }
+nav ul { display: flex; list-style: none; }
+nav ul li a { color: white; text-decoration: none; padding: 0 15px; font-weight: bold; }
+
+/* Hero Section */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200');
+    height: 70vh; background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; color: white; text-align: center;
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.btn { background: #f1c40f; color: #333; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+/* Section Chung */
+.section { padding: 60px 10%; }
+.title { text-align: center; margin-bottom: 40px; color: #2d5a27; font-size: 2rem; }
+.bg-light { background: #f9f9f9; }
+
+/* Grid Sản phẩm */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px; }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card h3 { margin: 15px 0 5px; color: #2d5a27; }
+
+/* Form Liên hệ */
+.contact-box { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+button { width: 100%; background: #2d5a27; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; font-weight: bold; }
+footer { text-align: center; padding: 20px; background: #2d5a27; color: white; }
